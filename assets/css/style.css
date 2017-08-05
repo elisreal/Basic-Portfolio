@@ -1,3 +1,8 @@
+.container {
+	background: url("../images/concrete-texture.png");
+	background-repeat: repeat;
+}
+
 body {
 	background-color: #F0F0F0;
 	margin: auto;
@@ -41,11 +46,10 @@ p {
 }
 
 .container {
-	background: url("../images/concrete-texture.png");
-	background-repeat: repeat;
 	width: 960px;
 	padding: 20px 0 20px 0;
 	margin: auto;
+	height: 100%;
 }
 
 .content {

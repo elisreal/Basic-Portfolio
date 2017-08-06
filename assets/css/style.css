@@ -29,6 +29,11 @@ p {
 	line-height: 1.5rem;
 }
 
+p.contact {
+	line-height: 0;
+	padding-top: 10px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -63,7 +68,7 @@ li {
 	display: block;
 	padding: 10px;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	padding-top: 20px;
 	color: #777777;
 	text-decoration: none;
@@ -72,8 +77,8 @@ li {
 
 .header{
 	float: left;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
 	color: #ffffff;
 	background-color: #4aaaa5;
 }
@@ -94,7 +99,7 @@ li {
 }
 
 .content {
-	width: 608px;
+	width: 588px;
 	float: left;
 	background-color: #ffffff;
 	border-style: solid;
@@ -102,7 +107,7 @@ li {
 	border-width: 1px;
 	margin-right: 40px;
 	margin-bottom: 40px;
-	padding: 10px 20px 20px 20px;
+	padding: 20px 30px 20px 30px;
 }
 
 h1.subhead {
@@ -111,6 +116,20 @@ h1.subhead {
 
 h2.subhead {
 	color: #4aaaa5;
+}
+
+hr {
+	color: #dddddd;
+	background-color: #dddddd;
+	border: none;
+}
+
+hr.bigLine {
+	height: 3px;
+}
+
+hr.smallLine {
+	height: 2px;
 }
 
 img {
@@ -122,14 +141,43 @@ img.photo {
 }
 
 .social {
-	width: 228px;
+	width: 208px;
 	float: left;
 	border-style: solid;
 	background-color: #ffffff;
 	border-color: #dddddd;
 	border-width: 1px;
-	padding: 10px 20px 10px 20px;
+	padding: 20px 30px 20px 30px;
 
+}
+
+input.form {
+	border: 1px solid;
+	border-color: #dddddd;
+    padding: 10px; 
+    width: 566px;
+}
+
+input.message {
+	border: 1px solid;
+	border-color: #dddddd;
+    padding: 10px; 
+    width: 566px;
+    resize: vertical;
+    overflow: auto;
+}
+
+input.button {
+	background-color: #4aaaa5;
+	border: none;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .footer {
@@ -142,11 +190,15 @@ img.photo {
 	z-index: 100;
 	margin: auto;
 	display: table;
+	border-top-width: 7px;
+	border-top-color: #4aaaa5;
+	border-top-style: solid;
 }
 
 .footerCopy {
 	width: 960px;
-	color: #ffffff;
+	color: #cccccc;
+	font-size: 13px;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	text-align: center;
 	vertical-align: middle;

@@ -1,51 +1,66 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	<meta charset="UTF-8">
 		<title>Basic Portfolio</title>
 
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
 	<!--This is the about page-->
 	<body>
+	<div id="container">
 		<!--Nav Bar with title here-->
-		<div class="nav">
-			<div class="header">
-				<h1>Eliud Arbelo</h1>
+			<div class="navContainer">
+				<div class="nav">
+					<div class="header">
+						<h1>Eliud Arbelo</h1>
+					</div>
+					<ul>
+						<li><a href="index.html">About</a><span class="divider">|</span></li>
+						<li><a href="portfolio.html">Portfolio</a><span class="divider">|</span></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
 			</div>
-			<div class="navLinks">
-				<p><a href="index.html">About</a></p>
-				<p><a href="Portfolio">Portfolio</a></p>
-				<p><a href="contact"></a>Contact</p>
+			<div class="mainContent">
+				<!--Main content will go here-->
+				<div class="content">	
+					<h1 class="subhead">About Me</h1>
+					<hr class="bigLine">
+					<form action="mailto:e.arbelo2@gmail.com" method="post" enctype="text/plain">
+						<p class="contact">Name</p>
+						<input class="form" type="text" name="name"><br>
+						<p class="contact">Email</p>
+						<input class="form" type="text" name="mail"><br>
+						<p class="contact">Message</p>
+						<input class="message" type="text" name="message" size="200"><br><br>
+						<input class="button" type="submit" value="Send">
+					</form>
+				</div>
+
+				<!--Social Icons will go here-->
+
+				<div class="social">
+					<h2 class="subhead">Connect with Me</h2>
+					<hr class="smallLine">
+					<a href="https://github.com/elisreal" target="_blank">
+						<img src="assets/images/github.png" width="69px">
+					</a>
+					<a href="https://www.linkedin.com/in/eliud-arbelo-ii-4b7b2989" target="_blank">
+						<img src="assets/images/linkedin.png" width="69px">
+					</a>
+					<a href="https://stackoverflow.com/users/8322327/eliud-arbelo" target="_blank">
+						<img src="assets/images/stack.png" width="69px">
+					</a>
+				</div>
 			</div>
-		</div>
-
-		<!--contact form will go here-->
-		<div class="contact">	
-			<h1>Contact</h1>
-			<hr>
-			<form method="post" action="mailto:e.arbelo2@gmail.com" >
-				Name:<input type="text" name="name">
-				Email:<input type="text" name="Email">
-				Message:<input type="text" name="Message"
-				<input type="button" value="submit">
-			</form>
-		</div>
-
-		<!--Social Icons will go here-->
-
-		<div class="social">
-			<h2>Connect with Me</h2>
-			<hr>
-			<a href="my github"><img src="github icon"></a>
-			<a href="my linkedin"><img src="linkedin icon"></a>
-			<a href="my stackoverflow"><img src="stackoverflow icon"></a>
-		</div>
-
-
 		<!--Footer will go here. Make sticky-->
-		<div class="footer">
-			<p class="footerCopy">:copyright: Copyright 2017 Eliud Arbelo II.</p>
-		</div>
 
+		<div class="footer">
+			<div class="footerCopy">
+			©Copyright 2017 Eliud Arbelo II.
+			</div>
+		</div>
+	</div>
 	</body>
 </html>

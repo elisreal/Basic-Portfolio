@@ -158,13 +158,25 @@ input.form {
     width: 566px;
 }
 
-input.message {
+textarea {
+	resize: both;
+    overflow: scroll;
+}
+
+textarea.message {
 	border: 1px solid;
 	border-color: #dddddd;
-    padding: 10px; 
     width: 566px;
-    resize: vertical;
-    overflow: auto;
+    height: 200px;
+    text-align: left;
+    padding-left:5;
+    padding-top:5;
+    padding-bottom:0.4em;
+    padding-right: 0.4em;
+}
+
+input.textarea {
+	text-align: left top;
 }
 
 input.button {
@@ -178,6 +190,10 @@ input.button {
     margin: 4px 2px;
     cursor: pointer;
     font-size: 16px;
+}
+
+input::placeholder {
+	color: #dddddd;
 }
 
 .footer {

@@ -20,7 +20,7 @@ body {
 	display: table;
 	bottom: 0;
 	flex-grow: 1;
-	overflow: hidden;
+	overflow: scroll;
 }
 
 p {
@@ -96,6 +96,7 @@ li {
 	width: 960px;
 	padding: 20px 0px 20px 0px;
 	display: table;
+	margin-bottom: 70px;
 }
 
 .content {
@@ -110,12 +111,18 @@ li {
 	padding: 20px 30px 20px 30px;
 }
 
+h1 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
 h1.subhead {
 	color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 h2.subhead {
 	color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 hr {
@@ -126,6 +133,7 @@ hr {
 
 hr.bigLine {
 	height: 3px;
+	margin-bottom: 20px;
 }
 
 hr.smallLine {
@@ -137,7 +145,14 @@ img {
 }
 
 img.photo {
-	padding: 10px 15px 15px 0px;
+	width: 200px;
+	padding: 5px 15px 15px 0px;
+}
+
+img.icon {
+	width:69px;
+	height:69px;
+	margin: 0px auto;
 }
 
 .social {
@@ -156,6 +171,8 @@ input.form {
 	border-color: #dddddd;
     padding: 10px; 
     width: 566px;
+    font-size: 15px;
+    color: #777777;
 }
 
 textarea {
@@ -168,6 +185,8 @@ textarea.message {
 	border-color: #dddddd;
     width: 566px;
     height: 200px;
+    font-size: 15px;
+    color: #777777;
     text-align: left;
     padding-left:5;
     padding-top:5;
@@ -177,6 +196,8 @@ textarea.message {
 
 input.textarea {
 	text-align: left top;
+	font-size: 15px;
+    color: #777777;
 }
 
 input.button {
@@ -194,11 +215,81 @@ input.button {
 
 input::placeholder {
 	color: #dddddd;
+	font-size: 15px;
+}
+
+.portfolioItem1 {
+	width: 275px;
+	height: 205px;
+	background-image: url("../images/ipad.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	float: left;
+	margin-right: 38px;
+	margin-bottom: 20px;
+}
+
+.portfolioItem2 {
+	width: 275px;
+	height: 205px;
+	background-image: url("../images/turntable.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	float: left;
+	margin-bottom: 40px;
+}
+
+.portfolioItem3 {
+	width: 275px;
+	height: 205px;
+	background-image: url("../images/headphones.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	float: left;
+	margin-right: 38px;
+	margin-bottom: 40px;
+}
+
+.portfolioItem4 {
+	width: 275px;
+	height: 205px;
+	background-image: url("../images/ipod.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	float: left;
+	margin-bottom: 40px;
+}
+
+.portfolioItem5 {
+	width: 275px;
+	height: 205px;
+	background-image: url("../images/TV.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	float: left;
+	margin-right: 38px;
+	margin-bottom: 20px;
+}
+
+h2.portfolio {
+	width: 275px;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	font-weight: normal;
+	background-color: #4aaaa5;
+	padding: 10px 0px 10px 0px;
+	margin-top: 150px;
 }
 
 .footer {
-	position: absolute;
 	bottom: 0;
+	position: fixed;
 	width: 100%;
 	height: 80px;
 	background-color: #666666;
